@@ -1,0 +1,130 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+    <title>Menu Dropdown Horizontal - Linha de Código</title>
+     <!-- Aqui chamamos o nosso arquivo css externo -->
+    <link rel="stylesheet" type="text/css"  href="estilo.css" />
+    <!--[if lte IE 8]>
+ <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+ <![endif]-->
+ <style>
+     *{margin: 0; padding: 0;}
+
+body{
+font-family: arial, helvetica, sans-serif;
+font-size: 12px;
+height: 100px;
+
+}
+
+.menu{
+list-style:none;
+border:1px solid #c0c0c0;
+float:left;
+background-color: cadetblue;
+padding: 0px 0px 10px 10px;
+
+}
+.menu li{
+position:relative;
+float:left;
+border-right:1px solid #c0c0c0;
+}
+.menu li a{color:#333; text-decoration:none; padding:10px 10px; display:block;}
+
+.menu li a:hover{
+background: #333;
+color: white;
+-moz-box-shadow:0 3px 10px 0 #CCC;
+-webkit-box-shadow:0 3px 10px 0 #ccc;
+text-shadow:0px 0px 5px #fff;
+
+}
+.menu li  ul{
+position:absolute;
+top:25px;
+left:0;
+background-color:#fff;
+display:none;
+}
+.menu li:hover ul, .menu li.over ul{display:block;}
+
+nav > ul > li{
+
+display:block;
+width:350px;
+}
+.filmes:hover {
+    background-color:#CCC;
+    font-weight: bolder;
+}
+h1 {
+    margin: 10px;
+    color: brown;
+    height: 60px;
+    text-align: center;
+  
+
+}
+img {
+  width: 50px;
+  border-radius: 50%;
+}
+video {
+  width: 300px;
+}
+h2 {
+  position: ;
+  margin: 5px 0px 0px 0px;
+  padding: 100px 0px 10px 60px;
+  display: block
+}
+main >  p {
+  margin: 20px 0px 0px 20px;
+  width: 300px;
+  padding: 50px 30px 20px 20px;
+  border: 1px solid black;
+  box-shadow: 1px 1px  10px black  ;
+}
+main > img {
+  width: 300px;
+  border-radius: 400px;
+}
+h2.piada {
+  margin: 25px 0px 0px 0px;
+  
+}
+ </style>
+</head>
+<body>
+<nav>
+  <ul class="menu">
+      <li><h1>Alcione Maravilhosa <img src="imagem/boca.jpg" alt="">
+    </h1></li>
+		<li><a href="https://www.instagram.com/alcioneoliveira10/" target="blank">Me segue lá no instagram @alcioneoliveira10</a></a></li>
+		<li><a href="https://www.youtube.com/watch?v=ndDkNYiKhwU" target="blank"><strong>Hemisfério da programação</strong> -Meu canal do youtube</a></li>
+        
+	  		<li><a href="#">Filmes favoritos</a>
+	         	<ul class="filmes">
+	                  <li><a href="#">Milagre da sela 7</a></li>
+	                  <li><a href="#">Superação-A espera de um milagre</a></li>
+	                  <li><a href="#">Vivos</a></li>
+                    
+	       		</ul>
+			</li>
+		
+</ul>
+</nav>
+<main>
+  <h2 class="piada">Gosto de piadas</h2>
+  <img src="piada/piada.jpg"  alt="piada" >
+
+  <p>Bem, vou falar um pouqinho sobre mim, descobri o mundo da programação por influência de um sobrinho e estou gostando muito, adoro quando os programas funcionam; é uma sensação maravilhosa. Não guardo magoa, sou super sensivel e sincera. Não gosto de crumprir regras, extrovertida, não durmo antes das 23h e amo chocolate.</p>
+</main>
+
+<h2>Lolita</h2>
+<p>O nome é Lolita, mas ela tabém atende por Lolinha, Bandidinha, minininha e Lola.Ela é minha bebê.</p>
+<video src="video/minininha.mp4" autoplay controls>minha cachorra</video>
+</body>
+</html>
